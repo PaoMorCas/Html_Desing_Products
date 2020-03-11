@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Pacifico&display=swap');
+
+/* Variables */
+:root{
+    --green-color:#7ACC2D;
+    --white-color:white;
+    --black-color:#313337;
+    /* Tipografía */
+    --normal:12px;
+    /* Espaciado */
+    --space:10px;
+    /* Box shadow */
+    --box: 0 0 2px 1px #E6E5E9;
+}
+/* Variables */
+
+html,body{
+    padding:0px;
+    margin:0px;
+    font-size:var(--normal);
+    font-family: 'Lobster', cursive;
+}
+
+p, label{
+    font-size: var(--normal);
+}
+
+
+nav{
+    display:flex;
+    background-color:var(--green-color);
+    padding: var(--space);
+    color:var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display:flex;
+}
+
+nav li{
+    padding-left: 20px;
+    list-style: none;
+}
+
+img{
+    width: 80px;
+}
+
+nav li a{
+    color:var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover{
+ color:var(--white-color);
+}
+
+/* ----------------------------------- MAIN SECTION*/
+
+.main_section{
+    padding:15%;
+    text-align: center;
+}
+
+.products{
+    background-image: url("../images/curve.png");
+    background-size: cover;
+    background-position: center top;
+    height: 100px;
+    padding: 20%;
+    display: flex;
+}
+
+.product .content{
+    background-color: var(--white-color);
+    padding:15px;
+    box-shadow: var(--box);
+}
+
+.product {
+    padding:var(--space);
+    margin-top: -200px;
+}
+
+.img_content{
+    text-align: center;
+}
+
+#img_second{
+    width: 100px !important;
+}
+
+.main_button{
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color:var(--white-color);
+    border:0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.main_button:hover{
+    background-color: #5e9e22;
+}
+
+/* ------------------------------------------- PUNTOS */
+
+.puntos{
+    padding: 0 5% 0 5%;
+    display: flex;
+    padding-bottom: 0;
+    text-align: center;
+    
+}
+
+.punto{
+    padding: 66px;
+    padding-bottom: 3%;
+}
+
+.img_punto_uno{
+    width: 93px !important;
+}
+
+.img_punto_dos{
+    width: 58px !important;
+}
+
+.punto .content{
+    padding:15px;
+}
+
+/* -------------------------------------- PERSONAS */
+
+.menciones{
+    padding: 1%;
+    text-align:center;
+    border-bottom: gray;
+}
+
+.personas{
+    padding:10px;
+    display: flex;
+}
+
+.persona{
+    padding: 2%;
+}
+
+.persona .content{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+}
+
+.img_persona >img{
+ width: 100%;
+}
+
+/* ------------------------------------ Venta */
+.modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding:var(--space);
+}
+
+.modulo_pago_img{
+    max-width: 200px;
+    text-align: center;
+    margin: auto;
+}
+
+.data{
+    margin-top:var(--space);
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border:1px solid var(--black-color);
+    box-sizing: border-box;
+}
+
+.modulo_pago .main_button{
+    margin-top: 10px;
+}
+/* ------------------------------------ FOOTER */
+footer{
+    display: flex;
+    background-color: #313337;
+    justify-content: space-between;
+    padding: var(--space);
+    color: white;
+}
